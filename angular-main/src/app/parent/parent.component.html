@@ -1,0 +1,13 @@
+<app-child [parentdata]="'parent'" [parentdata1]="parent" (click1)="funparent1($event)" [count]="current" (countUpdatePlus)="onUpdatedCounter($event)" check={{data}}></app-child>
+ 
+ <h1>{{parent}}</h1>
+
+
+
+ <input type="number" [(ngModel)]="current">
+ <h1>{{current}}</h1>
+
+ <button (click)="onupdate()">update</button>
+
+
+

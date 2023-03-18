@@ -1,0 +1,16 @@
+<!-- <li *ngFor="let person of peoples">{{person.name}}</li>
+<li *ngFor="let person of peoples">{{person.email}}</li>
+<a routerLink="todoform" >Add</a> -->
+
+<div *ngFor="let quiz of questions">
+
+  <h1>{{quiz.question}}</h1>
+  <ul *ngFor="let item of quiz.options">
+    <!-- <input type="radio">{{item.option}} -->
+    <input type="radio" name="{{quiz.id}}" value="{{item.optionid}}" [(ngModel)]="quiz.selected" />{{item.option}}
+
+
+  </ul>
+  <button (click)="onsubmit()">submit</button>
+</div>
+

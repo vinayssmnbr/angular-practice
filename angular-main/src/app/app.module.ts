@@ -9,7 +9,9 @@ import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
 import { HeaderComponent } from './header/header.component';
 import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component';;
+import { ChildComponent } from './child/child.component';
+import { TodoComponent } from './todo/todo.component';
+import { TodoformComponent } from './todoform/todoform.component';;
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ChildComponent } from './child/child.component';;
     ThirdComponent,
     HeaderComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    TodoComponent,
+    TodoformComponent
   ],
   imports: [
     BrowserModule,
@@ -29,4 +33,6 @@ import { ChildComponent } from './child/child.component';;
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+ 
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-parent',
@@ -24,5 +24,6 @@ export class ParentComponent {
   onupdate(){
     this.data="hii..."
   }
+
 
 }
